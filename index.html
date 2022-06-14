@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--Roboto Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/4634c0cfb0.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!--Navbar-->
+    <nav>
+        <div class="container">
+            <div class="row">
+                <div class="navbar">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="img/logo.png" alt="logo">
+                            <div class="logo-txt">
+                                <p>Weather</p>
+                                <small>tagline goes here</small>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="menu">
+                        <ul>
+                            <li>
+                                <a class="active" href="index.html">Home</a>
+                            </li>
+                            <li>
+                                <a href="#">News</a>
+                            </li>
+                            <li>
+                                <a href="#">Live cameras</a>
+                            </li>
+                            <li>
+                                <a href="#">Photos</a>
+                            </li>
+                            <li>
+                                <a href="#">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="sm-toggler">
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!--Main Section-->
+    <main class="banner">
+            <section>
+                <div class="container">
+                    <div class="row">
+                        <div class="form-container">
+                            <div class="search-form">
+                                <input class="location" type="text" name="location" placeholder="Find Your Location" id="location">
+                                <input class="btn" type="submit" value="Find" id="find">
+                            </div>
+                        </div>
+                        <div class="error"></div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="container">
+                    <div class="row">
+                        <div class="cards">
+                            <div class="today">
+                                <div class="title">
+                                    <div class="day"></div>
+                                    <div class="date"></div>
+                                    <div class="clr"></div>
+                                </div>
+                                <div class="info">
+                                    <div class="city"></div>
+                                    <div class="flex">
+                                        <div class="temp"></div>
+                                        <div class="icon"><img src="" alt=""></div>
+                                    </div> 
+                                    <div class="status"></div>
+                                    <div class="extra">
+                                        <div class="rain">
+                                            <img src="img/icon-umberella.png" alt="">
+                                            <p></p>
+                                        </div>
+                                        <div class="speed">
+                                            <img src="img/icon-wind.png" alt="">
+                                            <p></p>
+                                        </div>
+                                        <div class="direction">
+                                            <img src="img/icon-compass.png" alt="">
+                                            <p></p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="tomorrow bg-dark">
+                                <div class="title t-bg-dark">
+                                    <div class="day"></div>
+                                </div>
+                                <div class="info">
+                                    <div class="icon">
+                                        <img src="" alt="">
+                                    </div>
+                                    <div class="temp-sec">
+                                        <p></p>
+                                        <small></small>
+                                    </div>
+                                    <div class="status"></div>
+                                </div>
+                            </div>
+
+                            <div class="after">
+                                <div class="title">
+                                    <div class="day"></div>
+                                </div>
+                                <div class="info">
+                                    <div class="icon">
+                                        <img src="" alt="">
+                                    </div>
+                                    <div class="temp-sec">
+                                        <p></p>
+                                        <small></small>
+                                    </div>
+                                    <div class="status"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <footer>
+                <div class="container">
+                    <div class="row">
+                        <div class="form-container">
+                            <div class="subscribe-form">
+                                <input class="subscribe" type="text" name="subscribe" placeholder="Enter your email to subscribe..">
+                                <input class="btn" type="submit" value="Subscribe">
+                            </div>
+                        </div>
+
+                        <div class="socials">
+                            <a href="#">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa-brands fa-google-plus-g"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa-brands fa-pinterest"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div>
+                            <p>
+                                Copyright 2014 Company name. Designed by Themezy. All rights reserved
+                            </p>
+                        </div>
+                        <div>
+                            <p>
+                                Powered by <a href="https://www.weatherapi.com/" title="Weather API">WeatherAPI.com</a>
+                            </p>
+                        </div>
+
+
+                    </div>
+                </div>
+            </footer>
+    </main>
+
+    <!--Custom JS-->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
